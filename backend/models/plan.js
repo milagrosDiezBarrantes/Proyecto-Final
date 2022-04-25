@@ -1,8 +1,7 @@
 const { DataTypes } = require('sequelize');
 
 module.exports = (sequelize) => {
- 
-  sequelize.define("comic", {
+  sequelize.define("plan", {
     name: {
       type: DataTypes.STRING,
       allowNull: false
@@ -12,14 +11,16 @@ module.exports = (sequelize) => {
       defaultValue: DataTypes.UUIDV4,
       primaryKey: true,
     },
-    image: {
+    premium: {
       type: DataTypes.TEXT,
     },
+    standar: {
+        type: DataTypes.TEXT,
+      },
     mail: { 
       type: DataTypes.STRING,
       allowNull: true,
     },
-
     createdInDb: {
       type: DataTypes.BOOLEAN,
       defaultValue: true,
