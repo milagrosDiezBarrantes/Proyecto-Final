@@ -10,7 +10,6 @@ function App() {
         {data.results.map((comic) => (
           <div className="card" key={comic.id}>
             <h3>title: {comic.title}</h3>
-
             <img
               src={comic.thumbnail.path + "." + comic.thumbnail.extension}
               alt={comic.title}
