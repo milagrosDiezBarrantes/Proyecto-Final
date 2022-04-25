@@ -25,7 +25,7 @@ function App() {
                 <li>price: {comic.prices[0].type}</li>
                 <li>isbn: {comic.isbn}</li>
                 <li>Pages :{comic.pageCount} </li>
-                <p>
+                <div>
                   {comic.creators?.items?.map((creator) =>
                     creator.name && creator.role ? (
                       <p key={creator.id}>
@@ -34,7 +34,7 @@ function App() {
                       </p>
                     ) : null
                   )}
-                </p>
+                </div>
               </ul>
             </div>
           </div>
