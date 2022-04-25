@@ -15,15 +15,5 @@ module.exports = (sequelize) => {
     image: {
       type: DataTypes.TEXT,
     },
-    mail: { 
-      type: DataTypes.STRING,
-      allowNull: true,
-    },
-
-    createdInDb: {
-      type: DataTypes.BOOLEAN,
-      defaultValue: true,
-      allowNull: false
-    }
   });
 };
